@@ -1,0 +1,179 @@
+@font-face{
+        font-family: "open-sans";
+        src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face{
+        font-family: "open-sans-light";
+        src: url(../fonts/OpenSans-Light.ttf);
+}
+
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "open-sans";
+}
+
+.context{
+        width: 90%;
+        margin: 0 auto;
+}
+
+.flex-row-between{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.banner{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../img/capa.png);
+        background-size: cover;
+        background-position: center;
+}
+
+.main-header{
+        padding: 2%;
+}
+
+logo{
+        display: block;
+        width: 15%;
+}
+
+logo img{
+        width: 100%;
+}
+
+.menu-responsivo{
+        display: none;
+}
+
+.main-menu{
+        width: 40%;
+  
+}
+
+.main-menu a{
+        color: #fff;
+        font-size: 18px;
+        margin-left: 10%;
+        text-decoration: none;
+       
+}
+
+.main-menu a:first-of-type{
+       margin-left: 0;
+       
+}
+
+.objetivo-empresa{
+        margin: 120px 0 0 50%;
+        width: 40%;
+        color: #fff;
+}
+
+.objetivo-empresa h1{
+        font-family: "open-sans-light";
+        font-size: 40px;
+        margin-bottom: 15px;
+}
+
+/* ipad pro */
+@media screen and (max-width: 1200px ){
+        .flex-row-between{
+                flex-direction: column;
+        }
+
+        logo{
+                width: 25%;
+                margin-bottom: 25px;
+        }
+
+        .main-menu{
+                width: 40%;
+              
+        }
+   
+}
+
+
+/* ipad */
+@media screen and (max-width: 800px ){
+   
+        .main-menu{
+                width: 50%;
+        }
+   
+}
+
+/* celular */
+
+@media screen and (max-width: 600px){
+
+        .flex-row-between{
+                flex-direction: row;
+        }
+
+        .banner{
+                height: 60vh;
+        }
+
+        .main-header{
+                padding: 5% 2%;
+        }
+
+        .main-menu{
+                display: none;
+                width: 100%;
+                background-color: #6253a4;
+                padding: 2%;
+                position: absolute;
+                top: 70px;
+                left:0;
+
+        }
+
+        .main-menu a{
+                display: block;
+                margin: 10% 0;
+                text-align: center;
+        
+        }
+
+        .menu-responsivo{
+                display: block !important;
+         
+        }
+
+        linha{
+                display: block;
+                width: 35px;
+                height: 4px;
+                margin-bottom: 5px;
+                background-color: #ffffff;
+                border-radius: 3px;
+        }
+
+        logo{
+                width: 60%;
+                margin: 1px 0 0 3%;
+                
+        }
+
+        .objetivo-empresa{
+                margin: 40px auto;
+                width: 90%;
+                color: #fff;
+                text-align: center;
+        }
+
+        .objetivo-empresa h1{
+                font-size: 30px;
+        }
+}
+
+
+
