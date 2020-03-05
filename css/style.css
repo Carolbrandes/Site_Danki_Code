@@ -15,6 +15,10 @@
         font-family: "open-sans";
 }
 
+body{
+        overflow-x: hidden;
+}
+
 .context{
         width: 90%;
         margin: 0 auto;
@@ -26,12 +30,38 @@
         align-items: center;
 }
 
+.flex-row-center{
+        display: flex;
+        justify-content: center;
+}
+
+.botao-1{
+        display: block;
+        width: 150px;
+        min-width: fit-content;
+        height: 40px;
+        background-color: #faaa68;
+        color: #222222;
+        text-decoration: none;
+        border-radius: 25px;
+        -moz-border-radius: 25px;
+        -webkit-border-radius: 25px;
+        padding: 2%;
+        text-align: center;
+        margin: 25px 5%;
+}
+
+/* header */
+
 .banner{
         width: 100vw;
-        height: 100vh;
+        height: 90vh;
+        min-height: 500px;
+        padding: 0 3% 10%;
         background-image: url(../img/capa.png);
         background-size: cover;
         background-position: center;
+
 }
 
 .main-header{
@@ -70,7 +100,7 @@ logo img{
 }
 
 .objetivo-empresa{
-        margin: 120px 0 0 50%;
+        margin: 60px 0 0 50%;
         width: 40%;
         color: #fff;
 }
@@ -79,6 +109,36 @@ logo img{
         font-family: "open-sans-light";
         font-size: 40px;
         margin-bottom: 15px;
+}
+
+
+/* secao roxo */
+.servico-empresa{
+    background-color: #472562;
+    color: #fff;
+    height: 400px;
+}
+
+.texto{
+        width: 35%;
+        position: relative;
+        left: 8%;
+        margin: 50px 0;
+}
+
+.texto li{
+        padding: 2%;
+        list-style-position: inside;
+}
+
+.imagem-device{
+        width: 45%;
+        height: 450px;
+        background-image: url(../img/device.png);
+        background-size: cover;
+        background-position: center;
+        margin-top: -50px;
+
 }
 
 /* ipad pro */
@@ -93,8 +153,39 @@ logo img{
         }
 
         .main-menu{
-                width: 40%;
+                width: 50%;
               
+        }
+
+        .banner{
+                height: 40vh;
+        }
+
+        .objetivo-empresa {
+                margin: 80px auto;
+                width: 60%;
+                text-align: center;
+        }
+
+        .texto {
+                width: 60%;
+                position: static;
+                margin: 50px auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        }
+
+        .texto h1{
+                margin: 20px 0;
+        }
+
+        .texto p{
+                margin-bottom: 20px;
+        }
+
+        .imagem-device{
+                display: none;
         }
    
 }
@@ -104,7 +195,12 @@ logo img{
 @media screen and (max-width: 800px ){
    
         .main-menu{
-                width: 50%;
+                width: 60%;
+        }
+
+        .objetivo-empresa {
+                margin: 35px auto;
+               
         }
    
 }
@@ -164,7 +260,7 @@ logo img{
         }
 
         .objetivo-empresa{
-                margin: 40px auto;
+                margin: 60px auto;
                 width: 90%;
                 color: #fff;
                 text-align: center;
@@ -173,6 +269,17 @@ logo img{
         .objetivo-empresa h1{
                 font-size: 30px;
         }
+
+        .texto {
+                width: 90%;
+                margin: 20px auto;
+        }
+
+        .texto h1, .texto p{
+                text-align: center;
+        }
+
+
 }
 
 
