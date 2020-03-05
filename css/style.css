@@ -141,6 +141,26 @@ logo img{
 
 }
 
+/* secao projetos */
+.projetos{
+        text-align: center;
+        padding: 5% 2%;
+}
+
+.projetos h1, .projetos p{
+        margin-bottom: 15px;
+}
+
+.imagem-sistema{
+        width: 80%;
+        height: 500px;
+        margin: 50px auto;
+        background-image: url(../img/sistema.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+
 /* ipad pro */
 @media screen and (max-width: 1200px ){
         .flex-row-between{
@@ -278,6 +298,12 @@ logo img{
         .texto h1, .texto p{
                 text-align: center;
         }
+
+        .imagem-sistema{
+               height: 200px;
+               
+        }
+        
 
 
 }
