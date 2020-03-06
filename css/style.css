@@ -8,6 +8,13 @@
         src: url(../fonts/OpenSans-Light.ttf);
 }
 
+@font-face{
+        font-family: "open-sans-italic";
+        src: url(../fonts/OpenSans-Italic.ttf);
+}
+
+
+
 *{
         margin: 0;
         padding: 0;
@@ -24,16 +31,28 @@ body{
         margin: 0 auto;
 }
 
+.flex-row{
+        display: flex;
+        flex-wrap: wrap;
+}
+
 .flex-row-between{
         display: flex;
         justify-content: space-between;
         align-items: center;
 }
 
+.flex-row-between-2{
+        display: flex;
+        justify-content: space-between;
+}
+
 .flex-row-center{
         display: flex;
         justify-content: center;
 }
+
+
 
 .botao-1{
         display: block;
@@ -147,19 +166,84 @@ logo img{
         padding: 5% 2%;
 }
 
-.projetos h1, .projetos p{
+.projetos h2, .projetos p{
         margin-bottom: 15px;
 }
 
 .imagem-sistema{
-        width: 80%;
-        height: 500px;
-        margin: 50px auto;
+        width: 90%;
+        height: 400px;
+        margin: 0px auto 0;
         background-image: url(../img/sistema.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        position: relative;
+        top: 100px;
 }
+
+/* secao equipe */
+.equipe{
+        width: 50%;
+        background-color: #886eaf;
+        padding: 10% 2% 5%;
+        color: #fff;
+}
+
+.equipe h2{
+        font-family: "open-sans-italic";
+        margin-bottom: 15px;
+}
+
+.equipe p{
+        line-height: 25px;
+}
+
+/* secao colaboradores */
+.colaboradores{
+        width: 50%;
+        padding: 10% 2% 5%;    
+}
+
+.foto {
+        margin-top: -15px;
+}
+
+.foto img{
+        width: 25%;
+        height: 80px;
+        border-radius: 50%;
+}
+
+.nome_funcao p{
+        font-family: "open-sans-italic";
+        font-size: 12px;
+}
+
+.texto-sobre-colaborador{
+        font-size: 15px;
+        width: 70%;
+        margin: 15px 0;
+}
+
+.container-bullets{
+        margin-top: 30px;
+}
+
+
+.bullets{
+       display: inline-block;
+       width: 10px;
+       height: 10px;
+       border-radius: 50%;
+       background-color: #6b6b6b;
+       margin-right: 2%;
+       
+}
+
+
+
+
 
 /* ipad pro */
 @media screen and (max-width: 1200px ){
@@ -196,7 +280,7 @@ logo img{
                 align-items: center;
         }
 
-        .texto h1{
+        .texto h2{
                 margin: 20px 0;
         }
 
@@ -286,7 +370,7 @@ logo img{
                 text-align: center;
         }
 
-        .objetivo-empresa h1{
+        .objetivo-empresa h2{
                 font-size: 30px;
         }
 
@@ -295,7 +379,7 @@ logo img{
                 margin: 20px auto;
         }
 
-        .texto h1, .texto p{
+        .texto h2, .texto p{
                 text-align: center;
         }
 
