@@ -303,8 +303,29 @@ logo img{
         }
 
         .objetivo-empresa {
-                margin: 35px auto;
-               
+                margin: 35px auto;  
+        }
+
+        .equipe {
+                padding: 15% 2% 5%;
+  
+        }
+
+        .colaboradores {
+                padding: 15% 2% 5%;
+        }
+
+        .texto-sobre-colaborador{
+                width: 100%;
+        }
+
+
+        .nome_funcao{
+                width: 100%;
+        }
+
+        .foto img {
+                width: 50%;
         }
    
 }
@@ -387,9 +408,22 @@ logo img{
                height: 200px;
                
         }
-        
 
+        .equipe{
+                width: 100%;
+                padding: 40% 2% 20%;
+                text-align: center;
 
+        }
+
+        .colaboradores{
+                width: 100%;
+                margin: 0 auto;
+              
+        }
+
+       
+      
 }
 
 
