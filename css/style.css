@@ -63,6 +63,7 @@ body{
         width: 150px;
         min-width: fit-content;
         height: 40px;
+        line-height: 20px;
         background-color: #faaa68;
         color: #222222;
         text-decoration: none;
@@ -144,10 +145,15 @@ logo img{
 }
 
 .texto{
-        width: 35%;
+        width: 90%;
         position: relative;
         left: 8%;
         margin: 50px 0;
+}
+
+.texto ul{
+        width: 100%;
+        text-align: center;
 }
 
 .texto li{
