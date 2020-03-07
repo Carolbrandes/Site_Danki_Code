@@ -295,6 +295,21 @@ logo img{
         height: 100%;
 }
 
+/* secao footer */
+footer{
+        padding: 2%;
+        background-color: #1a2124;
+        color: #fff;
+        text-align: center;
+}
+
+footer p{
+        margin-bottom: 10px;
+}
+
+footer p:last-of-type{
+        margin-bottom: 0;
+}
 
 
 
