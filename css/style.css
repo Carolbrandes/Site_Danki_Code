@@ -63,7 +63,7 @@ body{
         width: 150px;
         min-width: fit-content;
         height: 40px;
-        line-height: 20px;
+        line-height: 10px;
         background-color: #faaa68;
         color: #222222;
         text-decoration: none;
@@ -145,24 +145,22 @@ logo img{
 }
 
 .texto{
-        width: 90%;
+        width: 50%;
         position: relative;
-        left: 8%;
+        left: 30%;
         margin: 50px 0;
 }
 
-.texto ul{
-        width: 100%;
-        text-align: center;
-}
+
 
 .texto li{
         padding: 2%;
         list-style-position: inside;
 }
 
+
 .imagem-device{
-        width: 45%;
+        width: 50%;
         height: 450px;
         background-image: url(../img/device.png);
         background-size: cover;
@@ -352,6 +350,11 @@ logo img{
 
 /* ipad */
 @media screen and (max-width: 800px ){
+
+        .botao-1{
+                line-height: 20px;
+
+        }
    
         .main-menu{
                 width: 60%;
@@ -359,6 +362,11 @@ logo img{
 
         .objetivo-empresa {
                 margin: 35px auto;  
+        }
+
+        .texto ul{
+                width: 100%;
+                text-align: center;
         }
 
         .equipe {
@@ -461,6 +469,11 @@ logo img{
         }
 
         .texto h2, .texto p{
+                text-align: center;
+        }
+
+        .texto ul{
+                width: 100%;
                 text-align: center;
         }
 
